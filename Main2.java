@@ -1,9 +1,19 @@
-//"Q2 : 홀수,짝수 판별하기
-// 자연수 13 이 홀수인지 짝수인지를 판별할 수 있는 방법을 생각해 보고, 프로그램을 만들어 보자.
+//Q2. 별 표시하기
+// 줄이 바뀔때마다 별도 하나씩 늘리기
 
 public class Main2 {
     public static void main(String[] args) {
-        int a = 13;
-        System.out.println(13%2);
+        int i = 0;
+        while (true) {
+            i += 1; //while 수행 시 1씩 증가
+            if (i > 5) {// i가5보다 크면 while문 벗어남
+                break;
+            }
+            for (int j = 0; j < i; j++) { //i값만큼 *출력
+                System.out.print('*');
+            }
+            System.out.println("");
+        }
     }
 }
+
